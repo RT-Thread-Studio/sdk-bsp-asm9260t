@@ -1,0 +1,104 @@
+board:
+  buy_url_cn: http://www.alphascale.com
+  buy_url_global: http://www.alphascale.com
+  debug_interface: JTAG
+  debugger: J-Link
+  description_en: ASM9260T is an industrial arm9 chip launched by Alphascale  at the
+    end of 2013. The main frequency is 240MHz. It has built-in 256Mbit Sdram, built-in
+    serial port controller (10/100Mbps), LCD controller, 2 USB2.0 (480Mbps), 2 channels
+    are available, 10 channels USART (compatible with ISO7816), camera interface (ITU656/601),
+    and have I2C, I2S, QSPI, ADC, DAC, motor PWM, QEI and many other peripherals.
+  description_zh: ASM9260T是由紫芯半导体, 在2013年底推出的一款工业 arm9 芯片，主频240MHz，其内置256Mbit Sdram，内置以太网控制器(10/100Mbps)，LCD控制器，2路USB2.0(480Mbps)，2路can，10路USART（兼容ISO7816），Camera接口（ITU656/601），并具有I2C,
+    I2S, QSPI,ADC，DAC，Motor PWM，QEI等诸多外设。
+  emulator_machine: ''
+  large_image: documents/images/no-image.png
+  name: ASM9260T-ALPHASCALE-EVK
+  price_cn: ' CNY'
+  price_global: ' USD'
+  sale_contact_cn: http://www.alphascale.com
+  sale_contact_global: http://www.alphascale.com
+  small_image: documents/images/no-image.png
+  vendor: ALPHASCALE
+  version: Rev.B
+chip:
+  chip_name: ASM9260T
+  clock_source: HSE
+  device_vendor: Aalphascale
+  family_name: ASM9260
+  rx_name: PA10
+  series_name: ASM9260
+  source_freq: '8000000'
+  sub_series_name: ASM9260
+  target_freq: '240000000'
+  tx_name: PA9
+  uart_name: UART1
+docs:
+- category: other
+  file: documents/ASM9260T_SIP176_EVK.pdf
+  title: ASM9260T_SIP176_EVK
+example_projects: []
+features:
+- 240MHz 32bit CPU
+- 16KB I-CACHE, 16KB D-CACHE, MMU
+- 24bit LCD
+- SD/MMC Card
+features_zh:
+- 240MHz 32bit CPU
+- 16KB I-CACHE, 16KB D-CACHE, MMU
+- 24bit LCD
+- SD/MMC Card
+pkg_type: Board_Support_Packages
+pkg_vendor: RealThread
+pkg_version: 1.0.0
+template_projects:
+- builtin_files:
+  - files_and_folders:
+    - .config
+    - .cproject
+    - .project
+    - .settings
+    - applications
+    - cconfig.h
+    - drivers
+    - IAR_ASM9260T_DeviceSupportFile
+    - jlink
+    - Kconfig
+    - link_scripts
+    - makefile.targets
+    - platform
+    - project.ewp
+    - project.eww
+    - project.uvopt
+    - project.uvproj
+    - rtconfig.h
+    - rtconfig.py
+    - rtconfig_preinc.h
+    - SConscript
+    - SConstruct
+    - template.ewp
+    - template.eww
+    - template.uvopt
+    - template.uvproj
+    source_path_offset: project_0
+    target_path_offset: ''
+  external_files:
+  - files_and_folders:
+    - components
+    - include
+    - libcpu/arm
+    - libcpu/Kconfig
+    - libcpu/SConscript
+    - src
+    - tools
+    - Kconfig
+    - LICENSE
+    package_name: RT-Thread
+    package_type: RT-Thread_Source_Code
+    package_vendor: ''
+    package_version: latest
+    source_path_offset: rt-thread
+    target_path_offset: rt-thread
+  project_description: asm9260 rt-thread latest project
+  project_name: asm9260t
+  project_type: rt-thread|@full|@latest
+yaml_version: 3
